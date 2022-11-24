@@ -12,21 +12,21 @@ namespace GeoTools.GeoServer.Helpers.Options
             var failures = new List<string>();
 
             if (options is null)
-                return ValidateOptionsResult.Fail(ExceptionMessages.Options_Null);
+                return ValidateOptionsResult.Fail(Messages.Options_Null);
 
             if (options.ConfigureHttpClient != null)
                 return ValidateOptionsResult.Success;
 
             if (options.BaseAddress == null)
-                failures.Add(ExceptionMessages.Options_BaseAddressNull);
+                failures.Add(Messages.Options_BaseAddressNull);
             else if (options.BaseAddress.IsFile)
-                failures.Add(ExceptionMessages.Options_BaseAddressFile);
+                failures.Add(Messages.Options_BaseAddressFile);
 
             if (options.AuthorizationHeaderValue != null &&
                 options.AuthorizationHeaderValue.Split(
                     new char[] { ' ' },
                     StringSplitOptions.RemoveEmptyEntries).Length < 1)
-                failures.Add(ExceptionMessages.Options_AuthorizationHeaderValueWrongFormat);
+                failures.Add(Messages.Options_AuthorizationHeaderValueWrongFormat);
 
             if (failures.Count > 0)
                 return ValidateOptionsResult.Fail(failures);

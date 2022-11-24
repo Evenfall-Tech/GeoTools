@@ -51,6 +51,9 @@ namespace GeoTools.GeoServer.Extensions
                 {
                     client.BaseAddress = options.BaseAddress;
 
+                    client.DefaultRequestHeaders.Accept.Clear();
+                    client.DefaultRequestHeaders.Accept.ParseAdd("application/json");
+
                     if (options.AuthorizationHeaderValue != null)
                     {
                         var authTokens = options.AuthorizationHeaderValue.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);

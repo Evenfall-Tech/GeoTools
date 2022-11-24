@@ -1,4 +1,6 @@
-﻿namespace GeoTools.GeoServer.Models
+﻿using System.Text.Json.Serialization;
+
+namespace GeoTools.GeoServer.Models
 {
     /// <summary>
     /// Workspace Response.
@@ -8,6 +10,7 @@
         /// <summary>
         /// Name of workspace.
         /// </summary>
+        [JsonPropertyName("name")]
         public string Name { get; }
 
         /// <summary>
@@ -19,23 +22,28 @@
         /// context of a virtual service bound to the isolated workspace.
         /// </remarks>
         /// <value>False by default.</value>
+        [JsonPropertyName("isolated")]
         public bool Isolated { get; }
 
         /// <summary>
         /// URL to Datas tores in this workspace.
         /// </summary>
+        [JsonPropertyName("dataStores")]
         public string DataStores { get; }
 
         /// <summary>
         /// URL to Coverage stores in this workspace.
         /// </summary>
+        [JsonPropertyName("coverageStores")]
         public string CoverageStores { get; }
 
         /// <summary>
         /// URL to WMS stores in this workspace.
         /// </summary>
+        [JsonPropertyName("wmsStores")]
         public string WmsStores { get; }
 
+        [JsonConstructor]
         public WorkspaceSummary(string name, string dataStores, string coverageStores, string wmsStores, bool isolated = false)
         {
             Name = name;

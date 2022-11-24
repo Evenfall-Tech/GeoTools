@@ -22,14 +22,14 @@ namespace GeoTools.GeoServer.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class ExceptionMessages {
+    internal class Messages {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ExceptionMessages() {
+        internal Messages() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace GeoTools.GeoServer.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GeoTools.GeoServer.Resources.ExceptionMessages", typeof(ExceptionMessages).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GeoTools.GeoServer.Resources.Messages", typeof(Messages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,15 @@ namespace GeoTools.GeoServer.Resources {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Response with StatusCode {0}..
+        /// </summary>
+        internal static string Exception_GeoServerClientException {
+            get {
+                return ResourceManager.GetString("Exception_GeoServerClientException", resourceCulture);
             }
         }
         
@@ -97,29 +106,83 @@ namespace GeoTools.GeoServer.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Request {0} failed with response 404 Not Found..
+        ///   Looks up a localized string similar to Request {0} succeeded with response 200 OK..
         /// </summary>
-        internal static string Request_NotFound {
+        internal static string Request_200OK {
             get {
-                return ResourceManager.GetString("Request_NotFound", resourceCulture);
+                return ResourceManager.GetString("Request_200OK", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Request {0} succeeded with response 200 OK..
+        ///   Looks up a localized string similar to Request {0} succeeded with response 201 Created..
         /// </summary>
-        internal static string Request_OK {
+        internal static string Request_201Created {
             get {
-                return ResourceManager.GetString("Request_OK", resourceCulture);
+                return ResourceManager.GetString("Request_201Created", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Request {0} failed with response 401 Unauthorized..
         /// </summary>
-        internal static string Request_Unauthorized {
+        internal static string Request_401Unauthorized {
             get {
-                return ResourceManager.GetString("Request_Unauthorized", resourceCulture);
+                return ResourceManager.GetString("Request_401Unauthorized", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Request {0} failed with response 403 Forbidden..
+        /// </summary>
+        internal static string Request_403Forbidden {
+            get {
+                return ResourceManager.GetString("Request_403Forbidden", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Request {0} failed with response 404 Not Found..
+        /// </summary>
+        internal static string Request_404NotFound {
+            get {
+                return ResourceManager.GetString("Request_404NotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Request {0} failed with response 405 MethodNotAllowed..
+        /// </summary>
+        internal static string Request_405MethodNotAllowed {
+            get {
+                return ResourceManager.GetString("Request_405MethodNotAllowed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Request {0} failed with response 409 Conflict..
+        /// </summary>
+        internal static string Request_409Conflict {
+            get {
+                return ResourceManager.GetString("Request_409Conflict", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Value {0} doesn&apos;t match the expected value {1}..
+        /// </summary>
+        internal static string Value_ComparisonMismatch {
+            get {
+                return ResourceManager.GetString("Value_ComparisonMismatch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Value {0} is null..
+        /// </summary>
+        internal static string Value_Null {
+            get {
+                return ResourceManager.GetString("Value_Null", resourceCulture);
             }
         }
         
