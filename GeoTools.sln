@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33020.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoTools.GeoServer", "GeoTools.GeoServer\GeoTools.GeoServer.csproj", "{46D1A21A-2C2F-46CF-899C-90D3D8E3B747}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeoTools.GeoServer", "src\GeoTools.GeoServer\GeoTools.GeoServer.csproj", "{46D1A21A-2C2F-46CF-899C-90D3D8E3B747}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeoTools.GeoServer.Abstractions", "src\GeoTools.GeoServer.Abstractions\GeoTools.GeoServer.Abstractions.csproj", "{CD6C97F4-922E-4C71-AADF-926008764840}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoTools.GeoServer.Tests", "tests\GeoTools.GeoServer.Tests\GeoTools.GeoServer.Tests.csproj", "{AA3ECC68-7ACF-4625-896F-96948198ECFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{46D1A21A-2C2F-46CF-899C-90D3D8E3B747}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46D1A21A-2C2F-46CF-899C-90D3D8E3B747}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46D1A21A-2C2F-46CF-899C-90D3D8E3B747}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD6C97F4-922E-4C71-AADF-926008764840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD6C97F4-922E-4C71-AADF-926008764840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD6C97F4-922E-4C71-AADF-926008764840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD6C97F4-922E-4C71-AADF-926008764840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA3ECC68-7ACF-4625-896F-96948198ECFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA3ECC68-7ACF-4625-896F-96948198ECFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA3ECC68-7ACF-4625-896F-96948198ECFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA3ECC68-7ACF-4625-896F-96948198ECFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
