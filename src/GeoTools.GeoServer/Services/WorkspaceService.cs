@@ -102,12 +102,12 @@ namespace GeoTools.GeoServer.Services
                 {
                     if (_options.IgnoreServerErrors)
                     {
-                        _logger.LogWarning(e, nameof(GetWorkspaceAsync));
+                        _logger.LogWarning(e, nameof(CreateWorkspaceAsync));
                         return new GeoServerResponse<Uri>(e.StatusCode, null);
                     }
                     else
                     {
-                        _logger.LogError(e, nameof(GetWorkspaceAsync));
+                        _logger.LogError(e, nameof(CreateWorkspaceAsync));
                         throw e.InnerException;
                     }
                 }
@@ -168,12 +168,12 @@ namespace GeoTools.GeoServer.Services
                 {
                     if (_options.IgnoreServerErrors)
                     {
-                        _logger.LogWarning(e, nameof(GetWorkspaceAsync));
+                        _logger.LogWarning(e, nameof(DeleteWorkspaceAsync));
                         return new GeoServerResponse<bool>(e.StatusCode, false);
                     }
                     else
                     {
-                        _logger.LogError(e, nameof(GetWorkspaceAsync));
+                        _logger.LogError(e, nameof(DeleteWorkspaceAsync));
                         throw e.InnerException;
                     }
                 }
@@ -274,12 +274,12 @@ namespace GeoTools.GeoServer.Services
                 {
                     if (_options.IgnoreServerErrors)
                     {
-                        _logger.LogWarning(e, nameof(GetWorkspaceAsync));
+                        _logger.LogWarning(e, nameof(GetWorkspacesAsync));
                         return new GeoServerResponse<IList<NamedLink>>(e.StatusCode, null);
                     }
                     else
                     {
-                        _logger.LogError(e, nameof(GetWorkspaceAsync));
+                        _logger.LogError(e, nameof(GetWorkspacesAsync));
                         throw e.InnerException;
                     }
                 }
@@ -338,12 +338,12 @@ namespace GeoTools.GeoServer.Services
                 {
                     if (_options.IgnoreServerErrors)
                     {
-                        _logger.LogWarning(e, nameof(GetWorkspaceAsync));
+                        _logger.LogWarning(e, nameof(UpdateWorkspaceAsync));
                         return new GeoServerResponse<bool>(e.StatusCode, false);
                     }
                     else
                     {
-                        _logger.LogError(e, nameof(GetWorkspaceAsync));
+                        _logger.LogError(e, nameof(UpdateWorkspaceAsync));
                         throw e.InnerException;
                     }
                 }

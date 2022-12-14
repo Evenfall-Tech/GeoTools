@@ -2,7 +2,7 @@
 
 namespace GeoTools.GeoServer.Models
 {
-    public class GetWorkspaceResponse
+    internal class GetWorkspaceResponse
     {
         [JsonPropertyName("workspace")]
         public WorkspaceSummary Workspace { get; }
