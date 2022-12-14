@@ -2,7 +2,6 @@ using GeoTools.GeoServer.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using System.Globalization;
 using System.Text;
 
 namespace GeoTools.GeoServer.Tests.Services

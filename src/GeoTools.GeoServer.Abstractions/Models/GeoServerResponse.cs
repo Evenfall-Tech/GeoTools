@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace GeoTools.GeoServer.Models
+﻿namespace GeoTools.GeoServer.Models
 {
     public class GeoServerResponse<T>
     {

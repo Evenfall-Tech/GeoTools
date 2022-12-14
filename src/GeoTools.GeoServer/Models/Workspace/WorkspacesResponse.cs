@@ -2,7 +2,7 @@
 
 namespace GeoTools.GeoServer.Models
 {
-    public class WorkspacesResponse
+    internal class WorkspacesResponse
     {
         /// <summary>
         /// WorkspaceResponseWrapper.
