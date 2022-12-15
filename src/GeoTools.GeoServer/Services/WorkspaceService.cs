@@ -1,5 +1,7 @@
 ﻿using GeoTools.GeoServer.Helpers;
 using GeoTools.GeoServer.Models;
+using GeoTools.GeoServer.Models.CatalogResponses;
+using GeoTools.GeoServer.Models.Workspace;
 using GeoTools.GeoServer.Resources;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;

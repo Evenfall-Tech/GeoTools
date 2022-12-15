@@ -1,4 +1,5 @@
 using GeoTools.GeoServer.Extensions;
+using GeoTools.GeoServer.Models.Workspace;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -26,9 +27,10 @@ namespace GeoTools.GeoServer.Tests.Services
             var response = responseWrapper.Response;
             Assert.NotNull(response);
             Assert.False(string.IsNullOrWhiteSpace(response.Name));
-            Assert.False(string.IsNullOrWhiteSpace(response.CoverageStores));
-            Assert.False(string.IsNullOrWhiteSpace(response.DataStores));
-            Assert.False(string.IsNullOrWhiteSpace(response.WmsStores));
+            Assert.False(string.IsNullOrWhiteSpace(response.CoverageStores?.ToString()));
+            Assert.False(string.IsNullOrWhiteSpace(response.DataStores?.ToString()));
+            Assert.False(string.IsNullOrWhiteSpace(response.WmsStores?.ToString()));
+            Assert.False(string.IsNullOrWhiteSpace(response.WmtsStores?.ToString()));
 
             responseWrapper = await service.GetWorkspaceAsync("ne1", token);
             Assert.NotNull(responseWrapper);

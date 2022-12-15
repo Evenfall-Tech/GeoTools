@@ -1,12 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using GeoTools.GeoServer.Models.CatalogResponses;
+using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace GeoTools.GeoServer.Models
+namespace GeoTools.GeoServer.Models.Datastore
 {
     /// <summary>
     /// Wrapper object in order to comply with current API encoding.
     /// </summary>
-    public class DataStoreListWrapper
+    internal class DataStoreListWrapper
     {
         [JsonPropertyName("dataStore")]
         public IList<NamedLink> DataStore { get; }

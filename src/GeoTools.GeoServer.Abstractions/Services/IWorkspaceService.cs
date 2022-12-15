@@ -1,4 +1,6 @@
 ﻿using GeoTools.GeoServer.Models;
+using GeoTools.GeoServer.Models.CatalogResponses;
+using GeoTools.GeoServer.Models.Workspace;
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -57,6 +59,7 @@ namespace GeoTools.GeoServer.Services
         /// Delete a Workspace.
         /// </summary>
         /// <param name="name">The name of the workspace to delete.</param>
+        /// <param name="recurse">Delete workspace contents (default false).</param>
         /// <param name="token"></param>
         /// <returns>Deletes a single workspace definition.</returns>
         /// <remarks>

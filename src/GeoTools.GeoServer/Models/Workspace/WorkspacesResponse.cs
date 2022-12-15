@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace GeoTools.GeoServer.Models
+namespace GeoTools.GeoServer.Models.Workspace
 {
     internal class WorkspacesResponse
     {

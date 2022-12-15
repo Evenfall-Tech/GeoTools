@@ -1,11 +1,11 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace GeoTools.GeoServer.Models
+namespace GeoTools.GeoServer.Models.Datastore
 {
     /// <summary>
     /// Datastores.
     /// </summary>
-    public class DataStoresListResponse
+    internal class DataStoresListResponse
     {
         [JsonPropertyName("dataStores")]
         public DataStoreListWrapper DataStores { get; }
