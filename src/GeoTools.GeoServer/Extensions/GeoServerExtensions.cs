@@ -32,7 +32,8 @@ namespace GeoTools.GeoServer.Extensions
                 .AddHttpClient(GeoServerOptions.HttpClientName, ConfigureHttpClient);
 
             return services
-                .AddTransient<IWorkspaceService, WorkspaceService>();
+                .AddTransient<IWorkspaceService, WorkspaceService>()
+                .AddTransient<IDatastoreService, DatastoreService>();
         }
 
         private static void ConfigureHttpClient(IServiceProvider provider, HttpClient client)

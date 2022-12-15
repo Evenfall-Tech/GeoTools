@@ -169,6 +169,15 @@ namespace GeoTools.GeoServer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Request {0} failed with response 500 InternalServerError..
+        /// </summary>
+        internal static string Request_500InternalServerError {
+            get {
+                return ResourceManager.GetString("Request_500InternalServerError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Value {0} doesn&apos;t match the expected value {1}..
         /// </summary>
         internal static string Value_ComparisonMismatch {

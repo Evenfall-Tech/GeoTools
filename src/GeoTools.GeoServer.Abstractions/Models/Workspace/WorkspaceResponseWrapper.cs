@@ -1,7 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using GeoTools.GeoServer.Models.CatalogResponses;
+using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace GeoTools.GeoServer.Models
+namespace GeoTools.GeoServer.Models.Workspace
 {
     public class WorkspaceResponseWrapper
     {

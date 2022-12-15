@@ -153,6 +153,9 @@
   <data name="Request_409Conflict" xml:space="preserve">
     <value>Request {0} failed with response 409 Conflict.</value>
   </data>
+  <data name="Request_500InternalServerError" xml:space="preserve">
+    <value>Request {0} failed with response 500 InternalServerError.</value>
+  </data>
   <data name="Value_ComparisonMismatch" xml:space="preserve">
     <value>Value {0} doesn't match the expected value {1}.</value>
   </data>

@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace GeoTools.GeoServer.Models
+namespace GeoTools.GeoServer.Models.Workspace
 {
     /// <summary>
     /// Wrapper object around Workspace, in order to conform to how XStream serializes to JSON in GeoServer.
